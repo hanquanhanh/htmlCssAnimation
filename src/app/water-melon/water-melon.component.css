@@ -1,0 +1,101 @@
+.duaHau {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.nuaDuoi {
+    background-color: red;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    left: 30%;
+    top: 40%;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.nuaDuoi:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -15%;
+    border-bottom: 60px solid green;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.hat1, .hat2, .hat3, .hat4, .hat5 {
+    height: 10px;
+    width: 10px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    background-color: #404000;
+}
+
+.hat1 {
+    position: absolute;
+    left: 46%;
+    top: 39%;
+}
+
+.hat2 {
+    position: absolute;
+    left: 49%;
+    top: 41%;
+}
+.hat3 {
+    position: absolute;
+    left: 44%;
+    top: 47%;
+}
+.hat4 {
+    position: absolute;
+    left: 38%;
+    top: 36%;
+}
+.hat5 {
+    position: absolute;
+    left: 42%;
+    top: 43%;
+}
+
+.nuaTren {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    left: 30%;
+    top: 40%;
+    border-radius: 50%;
+    transform: rotate(-130deg);
+    background-color: green;
+    animation: chem 5s ease-in-out infinite;
+}
+
+.nuaTren:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -15%;
+    border-bottom: 60px solid green;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+@keyframes chem {
+    from {
+        left: 30%;
+        top: 40%
+    }
+    to {
+        left: 45%;
+        top: 50%
+    }
+}
