@@ -4,16 +4,19 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { WaterMelonComponent } from './water-melon/water-melon.component';
+import { SuperSpinderComponent } from './super-spinder/super-spinder.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WaterMelonComponent
+    WaterMelonComponent,
+    SuperSpinderComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       {path: 'waterMelon', component: WaterMelonComponent},
+      {path: 'superSpinder', component: SuperSpinderComponent},
     ]),
   ],
   providers: [],
